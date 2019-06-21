@@ -1,2 +1,3 @@
 # py-confluent
-Bringing KSQL and Schema Registry APIs to Python.
+Bringing Confluent's KSQL, Kafka Streams, Schema Registry APIs to Python 3,
+all in one clean package.

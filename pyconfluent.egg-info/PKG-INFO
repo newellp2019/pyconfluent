@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pyconfluent
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: https://gitbub.com/newellp2019/pyconfluent
+Author: Peter Newell
+Author-email: peter.newell@covetrus.com
+License: UNKNOWN
+Description: # py-confluent
+        Bringing Confluent's KSQL, Kafka Streams, Schema Registry APIs to Python 3,
+        all in one clean package.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

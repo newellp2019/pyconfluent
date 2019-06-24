@@ -1,6 +1,5 @@
 """
 Processor context is the link to kafka from individual processor objects
-
 """
 
 import functools
@@ -25,7 +24,6 @@ def _raise_if_null_record(fn: Callable[..., Any]) -> Callable[..., Any]:
 class Context:
     """
     Processor context object
-
     """
 
     def __init__(self, _state_record_collector, _state_stores):
@@ -37,7 +35,6 @@ class Context:
     def send(self, topic, key, obj):
         """
         Send the key value-pair to a Kafka topic
-
         """
         print(f"Send {obj} to {topic}")
         pass
@@ -45,9 +42,7 @@ class Context:
     def schedule(self, timestamp):
         """
         Schedule the punctuation function call
-
         """
-
         pass
 
     @property  # type: ignore # waiting on https://github.com/python/mypy/issues/1362
@@ -73,9 +68,6 @@ class Context:
     def get_store(self, name) -> KeyValueStateStore:
         if not self.current_node:
             raise KafkaStreamsError("Access of state from unknown node")
-
-        # TODO: Need to check for a global state here
-        #       This is the reason that processors access store through context
 
         if name not in self.current_node.state_stores:
             raise KafkaStreamsError(f"Processor {self.current_node.name} does not have access to store {name}")

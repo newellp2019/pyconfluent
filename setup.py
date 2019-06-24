@@ -11,7 +11,7 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://gitbub.com/newellp2019/pyconfluent",
-    packages=setuptools.find_packages(),
+    install_requires=["requests", "confluent-kafka[avro]", "avro-python3"],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",

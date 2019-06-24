@@ -1,6 +1,5 @@
 """
-Run time exception thrown by winton kafka streams on error
-
+Run time exception thrown on error
 """
 
 

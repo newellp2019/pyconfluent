@@ -6,6 +6,7 @@ pyconfluent/schema_registry.py
 pyconfluent.egg-info/PKG-INFO
 pyconfluent.egg-info/SOURCES.txt
 pyconfluent.egg-info/dependency_links.txt
+pyconfluent.egg-info/requires.txt
 pyconfluent.egg-info/top_level.txt
 pyconfluent/kafka_streams/__init__.py
 pyconfluent/kafka_streams/kafka_client_supplier.py

@@ -1,3 +1,0 @@
-requests
-avro-python3
-confluent-kafka[avro]

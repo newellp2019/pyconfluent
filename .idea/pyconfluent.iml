@@ -3,8 +3,9 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/../py-confluent/venv" />
+      <excludeFolder url="file://$MODULE_DIR$/examples/venv" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.6 (py-confluent)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.6 (pyconfluent)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="TestRunnerService">

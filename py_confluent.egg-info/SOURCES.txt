@@ -1,0 +1,7 @@
+README.md
+setup.py
+py_confluent.egg-info/PKG-INFO
+py_confluent.egg-info/SOURCES.txt
+py_confluent.egg-info/dependency_links.txt
+py_confluent.egg-info/requires.txt
+py_confluent.egg-info/top_level.txt

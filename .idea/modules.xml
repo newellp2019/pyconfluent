@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/py-confluent.iml" filepath="$PROJECT_DIR$/.idea/py-confluent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../pyconfluent/.idea/pyconfluent.iml" filepath="$PROJECT_DIR$/../pyconfluent/.idea/pyconfluent.iml" />
     </modules>
   </component>
 </project>

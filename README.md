@@ -1,15 +1,13 @@
-# py-confluent
-Bringing KSQL, Kafka Streams, Schema Registry APIs to Python 3,
-all in one clean package.
+# pyconfluent
+pyconfluent brings most Confluent Kafka functionality to Python by providing wrappers for the KSQL and Schema Registry REST APIs, and an in-depth Pythonic interpretation of the Kafka Streams Java package inspired by Robinhood's `faust` and Winton's `winton-kafka-streams`.
 
-### Install
+### Installation
 
 `pip install pyconfluent`
 
 ### Usage
 
-pyconfluent requires the underlying Kafka services to be running. The 
-easiest way is to start Confluent Platform, see: ``.
+pyconfluent requires the Confluent Platform and all its underlying services to be running. When creating class instances, make sure to pass in the list of brokers running or leave it empty to connect to `localhost`. 
 
 ### KSQL
 

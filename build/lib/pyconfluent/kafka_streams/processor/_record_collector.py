@@ -1,6 +1,5 @@
 """
 Record collector sends produced results to kafka topic
-
 """
 
 import logging
@@ -8,16 +7,13 @@ import logging
 from ..errors.kafka_streams_error import KafkaStreamsError
 
 log = logging.getLogger(__name__)
-
-# When producing a message with partition = UA rdkafka will run a partitioner for us
 RD_KAFKA_PARTITION_UA = -1
 
 
 class RecordCollector:
     """
-    Collects records to be output to Kafka topics after
+    Collects records to be sent to Kafka topics after
     they have been processed by the topology
-
     """
 
     def __init__(self, _producer, _key_serde, _value_serde):
@@ -36,14 +32,14 @@ class RecordCollector:
         while not produced:
             try:
                 self.producer.produce(topic, ser_value, ser_key, partition, self.on_delivery, partitioner, timestamp)
-                self.producer.poll(0)  # Ensure previous message's delivery reports are served
+                self.producer.poll(0)
                 produced = True
             except BufferError as be:
                 log.exception(be)
-                self.producer.poll(10)  # Wait a bit longer to give buffer more time to flush
+                self.producer.poll(10)
             except NotImplementedError as nie:
                 log.exception(nie)
-                produced = True  # should not enter infinite loop
+                produced = True
 
     def on_delivery(self, err, msg):
         """

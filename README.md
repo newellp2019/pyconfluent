@@ -2,8 +2,9 @@
 pyconfluent brings most Confluent Kafka functionality to Python by providing wrappers for the KSQL and Schema Registry REST APIs, and an in-depth Pythonic interpretation of the Kafka Streams Java package inspired by Robinhood's `faust` and Winton's `winton-kafka-streams`.
 
 ### Installation
+This package was written for Python 3.6 and was not tested on other versions.
 
-`pip install pyconfluent`
+`pip3 install pyconfluent`
 
 ### Usage
 

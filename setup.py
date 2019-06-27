@@ -5,7 +5,7 @@ with open("README.md", "r") as f:
 
 setuptools.setup(
     name="pyconfluent",
-    version="0.0.5",
+    version="0.0.6",
     author="Peter Newell",
     author_email="peter.newell@covetrus.com",
     long_description=long_description,

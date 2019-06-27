@@ -11,10 +11,10 @@ class SchemaRegistry:
     or examined.
     """
 
-    def __init__(self, host="localhost"):
+    def __init__(self, host="http://localhost:8081"):
         self.host = host
-        self.headers = {"Content-Type": "application/vnd.schemaregistry.v1+json",
-                        "Accept": "application/vnd.schemaregistry.v1+json"}
+        self.headers = {"Content-Type": "application/json",
+                        "Accept": "application/json"}
 
     def schemas(self, _id):
         """
@@ -64,14 +64,17 @@ class SchemaRegistry:
 
     def create_subject(self, subject, schema):
         """
-        Register a new schema.
+        Register a new subject/schema.
 
-        :param subject: specify the schema name to be registered
+        :param subject: specify the subject name to be registered
         :param schema: AVRO schema string
         :return:
         """
+        payload = {"schema": schema}
+        print(payload)
         url = self.host + "/subjects/%s/versions" % subject
-        r = requests.post(url, data=schema, headers=self.headers)
+        r = requests.post(url, data=payload, headers=self.headers)
+        print(r.content)
         resp = json.loads(r.content)
         return resp
 
@@ -133,3 +136,4 @@ class SchemaRegistry:
         r = requests.get(url, headers=self.headers)
         resp = json.loads(r.content)
         return resp
+

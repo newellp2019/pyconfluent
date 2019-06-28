@@ -1,77 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="14fe162c-8bd7-4daa-82ac-d870d06f3877" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/lib/pyconfluent/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/build/lib/pyconfluent/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/pyconfluent-0.0.5-py3-none-any.whl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/pyconfluent-0.0.5.tar.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyconfluent.egg-info/PKG-INFO" beforeDir="false" afterPath="$PROJECT_DIR$/pyconfluent.egg-info/PKG-INFO" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyconfluent.egg-info/SOURCES.txt" beforeDir="false" afterPath="$PROJECT_DIR$/pyconfluent.egg-info/SOURCES.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyconfluent/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyconfluent/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyconfluent/kafka_streams/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyconfluent/kafka_streams/errors/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyconfluent/kafka_streams/errors/_kafka_error_codes.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyconfluent/kafka_streams/errors/kafka_streams_error.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyconfluent/kafka_streams/errors/task_migrated_error.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyconfluent/kafka_streams/kafka_client_supplier.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyconfluent/kafka_streams/kafka_config.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyconfluent/kafka_streams/kafka_streams.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyconfluent/kafka_streams/processor/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyconfluent/kafka_streams/processor/_context.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyconfluent/kafka_streams/processor/_punctuation_queue.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyconfluent/kafka_streams/processor/_record_collector.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyconfluent/kafka_streams/processor/_stream_task.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyconfluent/kafka_streams/processor/_stream_thread.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyconfluent/kafka_streams/processor/_timestamp.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyconfluent/kafka_streams/processor/extract_timestamp.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyconfluent/kafka_streams/processor/processor.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyconfluent/kafka_streams/processor/processor_context.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyconfluent/kafka_streams/processor/serialization/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyconfluent/kafka_streams/processor/serialization/_avro.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyconfluent/kafka_streams/processor/serialization/_bytes.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyconfluent/kafka_streams/processor/serialization/_double.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyconfluent/kafka_streams/processor/serialization/_float.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyconfluent/kafka_streams/processor/serialization/_integer.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyconfluent/kafka_streams/processor/serialization/_json.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyconfluent/kafka_streams/processor/serialization/_long.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyconfluent/kafka_streams/processor/serialization/_string.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyconfluent/kafka_streams/processor/serialization/deserializer.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyconfluent/kafka_streams/processor/serialization/serde.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyconfluent/kafka_streams/processor/serialization/serdes/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyconfluent/kafka_streams/processor/serialization/serdes/_serdes.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyconfluent/kafka_streams/processor/serialization/serdes/avro_serde.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyconfluent/kafka_streams/processor/serialization/serdes/bytes_serde.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyconfluent/kafka_streams/processor/serialization/serdes/double_serde.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyconfluent/kafka_streams/processor/serialization/serdes/float_serde.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyconfluent/kafka_streams/processor/serialization/serdes/integer_serde.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyconfluent/kafka_streams/processor/serialization/serdes/json_serde.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyconfluent/kafka_streams/processor/serialization/serdes/long_serde.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyconfluent/kafka_streams/processor/serialization/serdes/string_serde.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyconfluent/kafka_streams/processor/serialization/serdes/wrapper_serde.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyconfluent/kafka_streams/processor/serialization/serializer.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyconfluent/kafka_streams/processor/task_id.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyconfluent/kafka_streams/processor/topology.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyconfluent/kafka_streams/processor/wallclock_timestamp.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyconfluent/kafka_streams/state/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyconfluent/kafka_streams/state/factory/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyconfluent/kafka_streams/state/factory/base_storage_key_value_store_factory.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyconfluent/kafka_streams/state/factory/in_memory_key_value_store_factory.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyconfluent/kafka_streams/state/factory/key_value_store_factory.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyconfluent/kafka_streams/state/factory/store_factory.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyconfluent/kafka_streams/state/factory/value_store_factory.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyconfluent/kafka_streams/state/in_memory/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyconfluent/kafka_streams/state/in_memory/in_memory_state_store.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyconfluent/kafka_streams/state/in_memory/in_memory_state_store_supplier.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyconfluent/kafka_streams/state/key_value_state_store.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyconfluent/kafka_streams/state/logging/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyconfluent/kafka_streams/state/logging/change_logging_state_store.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyconfluent/kafka_streams/state/logging/store_change_logger.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyconfluent/kafka_streams/state/state_store.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyconfluent/kafka_streams/state/state_store_supplier.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyconfluent/schema_registry.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyconfluent/schema_registry.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
-    </list>
+    <list default="true" id="14fe162c-8bd7-4daa-82ac-d870d06f3877" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,11 +10,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/setup.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+            <state relative-caret-position="315">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
@@ -101,10 +31,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pyconfluent/schema_registry.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="449">
+            <state relative-caret-position="2070">
               <caret line="138" selection-start-line="138" selection-end-line="138" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
@@ -217,18 +147,18 @@
       <workItem from="1561142036909" duration="5607000" />
       <workItem from="1561389551075" duration="1790000" />
       <workItem from="1561392290250" duration="4811000" />
-      <workItem from="1561655447042" duration="241000" />
+      <workItem from="1561655447042" duration="371000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19450000" />
+    <option name="totallyTimeSpent" value="19580000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="834" y="87" width="928" height="948" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26077098" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26077098" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -242,7 +172,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.33609468" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.33609468" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -398,13 +328,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/setup.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pyconfluent/ksql.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -420,11 +343,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pyconfluent/schema_registry.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
+        <state relative-caret-position="2070">
           <caret line="138" selection-start-line="138" selection-end-line="138" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>

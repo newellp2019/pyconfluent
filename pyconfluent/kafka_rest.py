@@ -3,6 +3,9 @@ import json
 
 
 class KafkaRest:
+    """
+    provides access to Kafka Rest API for closer management of resources
+    """
 
     def __init__(self, dns="localhost:8082", brokers="localhost:9092"):
         self.base = dns

@@ -14,7 +14,7 @@ class SchemaRegistry:
     def __init__(self, host="http://localhost:8081"):
         self.host = host
         self.headers = {"Content-Type": "application/json",
-                        "Accept": "application/json"}
+                        "Accept": "application/vnd.schemaregistry.v1+json"}
 
     def schemas(self, _id):
         """
@@ -37,7 +37,7 @@ class SchemaRegistry:
         :return:
         """
         if subject:
-            url = self.host + "subjects/%s/versions" % subject
+            url = self.host + "/subjects/%s/versions" % subject
         elif subject and version_id:
             url = self.host + "/subjects/%s/versions/%s" % (subject, version_id)
         else:
@@ -73,21 +73,23 @@ class SchemaRegistry:
         payload = {"schema": schema}
         print(payload)
         url = self.host + "/subjects/%s/versions" % subject
-        r = requests.post(url, data=payload, headers=self.headers)
-        print(r.content)
+        r = requests.post(url, data=json.dumps(payload), headers=self.headers)
         resp = json.loads(r.content)
+        print(resp)
         return resp
 
-    def check_subject(self, subject):
+    def check_subject(self, subject, schema):
         """
         Check to see if a subject exists, if it does returns the schema string,
         subject name, unique identifier and version
 
         :param subject:
+        :parms schema:
         :return:
         """
         url = self.host + "/subjects/%s" % subject
-        r = requests.post(url, headers=self.headers)
+        payload = {"schema": schema}
+        r = requests.post(url, headers=self.headers, data=payload)
         resp = json.loads(r.content)
         return resp
 
@@ -98,13 +100,14 @@ class SchemaRegistry:
 
         :param subject:
         :param version_id:
-        :new_schema: AVRO schema string
+        :param new_schema: AVRO schema string
         :return:
         """
         url = self.host + "/compatibility/subjects/%s/versions/%s" % (subject, version_id)
         payload = {"schema": new_schema}
         r = requests.post(url, headers=self.headers, data=payload)
-        resp = json.loads(r.content)
+        print(r.content)
+        resp = json.loads(r.content)['is_compatible']
         return resp
 
     def update_config(self, compatibility, subject=None):
